@@ -101,5 +101,3 @@ A sleek drone product page with sections for specifications, reviews, and access
   - Dynamic reviews  
 - Improve responsiveness for mobile devices  
 - Connect to a backend for real product data  
-
----
