@@ -1,0 +1,873 @@
+/* Global Styles */
+
+body ::selection {
+  font-family: "Exo", sans-serif;
+  margin: 0px;
+  background-color: blueviolet;
+  color: white;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+a,
+span {
+  display: inline-block;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: oklch(96.9% 0.016 293.756);
+  display: flow-root;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  margin-top: 0px;
+  z-index: 1;
+}
+
+.navbar .container {
+  margin: auto;
+  width: 85%;
+}
+
+.navbar h1 {
+  float: left;
+}
+
+.navbar ul {
+  margin: 0px;
+  padding: 0px;
+  float: right;
+}
+
+.navbar ul li {
+  display: inline-block;
+  margin: 30px 10px;
+}
+
+.navbar ul li a {
+  color: black;
+}
+
+/* a::after{
+    border: 1px solid rgba(137, 42, 226, 0.808) ;
+    
+} */
+
+.navbar a:hover {
+  border-bottom: 1px solid oklch(54.1% 0.281 293.009);
+  color: oklch(54.1% 0.281 293.009);
+}
+
+.fa-helicopter {
+  background-color: oklch(60.6% 0.25 292.717);
+  color: white;
+  margin: 0px 8px 0px 0px;
+  display: inline-block;
+  overflow: hidden;
+  padding: 5px;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+
+/* Header Section Styles */
+
+.header {
+  display: flow-root;
+  padding: 120px 0px 60px;
+  margin-top: 30px;
+}
+
+.header .container {
+  width: 85%;
+  margin: auto;
+}
+
+.image {
+  width: 50%;
+  float: left;
+
+  padding: 5px;
+}
+
+.content {
+  float: right;
+  width: 50%;
+  margin-top: 15px;
+}
+
+.content > span {
+  background-color: rgba(137, 42, 226, 0.808);
+  color: white;
+  margin-inline: 8px;
+  border-radius: 25px;
+  padding: 5px 12px;
+}
+
+.content h2 {
+  font-size: 48px;
+  margin: 15px 0px 0px;
+}
+
+h2 span {
+  color: blueviolet;
+}
+
+.content > p {
+  font-size: 20px;
+  min-width: 550px;
+}
+
+.content .p {
+  font-size: 16px;
+}
+
+.num-1,
+.num-2,
+.num-3 {
+  display: inline-block;
+  margin-inline: 10px;
+}
+
+.num-1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.num-2 {
+  font-size: 24px;
+  text-decoration-line: line-through;
+}
+
+.num-3 {
+  font-size: 14px;
+  background-color: rgba(255, 0, 0, 0.2);
+  padding: 4px 12px;
+  border-radius: 10px;
+  color: red;
+  font-weight: 600;
+}
+
+.content button {
+  display: block;
+  width: 600px;
+  margin-block: 15px;
+  padding-block: 15px;
+  border-radius: 25px;
+  font-size: 18px;
+}
+
+.content .button-one {
+  background-color: blueviolet;
+  color: white;
+  border: 1px solid blueviolet;
+}
+
+.content .button-two {
+  border: 2px solid #ccc;
+}
+
+i {
+  margin-right: 12px;
+}
+.parent {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  border-radius: 15px;
+  border: 2px solid #ccc;
+  padding: 10px;
+}
+
+.child {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+  top: 10px;
+}
+
+.child img {
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.child div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  margin: 15px;
+  background-color: rgba(137, 42, 226, 0.808);
+  color: white;
+  border-radius: 25px;
+  padding: 5px 12px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* How We Compare Section Styles */
+.how-we-compare {
+  background-color: oklch(96.9% 0.016 293.756);
+  margin-top: 20px;
+  padding: 40px 0;
+}
+
+.how-we-compare .container {
+  width: 90%;
+  margin: auto;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.title h2 {
+  font-size: 36px;
+}
+
+/* .how-we-compare .title p{
+    font-size: 22px;
+} */
+
+.table {
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+}
+
+.table table {
+  width: 1000px;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.h-1 {
+  padding: 80px 16px 10px;
+  font-size: 20px;
+}
+
+tbody td {
+  margin-bottom: 8px;
+  padding: 20px;
+  font-size: 18px;
+}
+
+thead th {
+  padding-top: 30px;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.how-we-compare .title {
+  margin-bottom: 60px;
+}
+
+.table tr {
+  border-bottom: 1px solid #ccc;
+}
+
+.fa-video {
+  color: cornflowerblue;
+}
+
+.row-three i {
+  color: darkgreen;
+}
+
+.row-four i {
+  color: lime;
+}
+
+.row-six i {
+  color: red;
+}
+
+.fa-shield-halved {
+  color: dodgerblue;
+}
+
+.row-eight i {
+  color: blueviolet;
+}
+
+.fa-cloud-rain {
+  color: royalblue;
+}
+
+.row-ten i {
+  color: goldenrod;
+}
+
+.row-one td {
+  padding-top: -10px;
+}
+
+.Feature {
+  text-align: left;
+  padding-right: 40px;
+}
+
+.DJI {
+  background-color: oklch(49.1% 0.27 292.581);
+  border-radius: 35px;
+  color: white;
+  font-size: 14px;
+  padding: 6px 12px;
+}
+
+.DJI > i {
+  color: white;
+}
+
+tbody td {
+  border-bottom: 1px solid #ccc;
+}
+
+.table tr {
+  border-bottom: 1px solid #ccc;
+}
+
+.footer td {
+  font-weight: bold;
+  padding: 16px 0px;
+}
+
+tfoot tr {
+  padding-bottom: 20px;
+}
+
+.column {
+  color: blueviolet;
+}
+
+.fa-x,
+.fa-ruler-combined {
+  color: tomato;
+}
+
+.red {
+  color: tomato;
+}
+
+.abc {
+  color: gray;
+}
+
+.bold {
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.star i {
+  color: gold;
+  margin: 0px 0px 8px;
+}
+
+.star span i {
+  color: #ccc;
+}
+
+.background {
+  background-color: oklch(94.3% 0.029 294.588);
+  border-radius: 14px;
+}
+
+.star-half i {
+  color: gold;
+}
+
+tfoot > td {
+  text-align: left;
+  padding-left: 40px;
+}
+
+thead p {
+  font-size: 14px;
+  margin: 10px 0px 0px;
+}
+
+.Winner {
+  background-color: white;
+  color: oklch(62.7% 0.194 149.214);
+  border-radius: 15px;
+  text-align: center;
+  margin: 40px auto;
+  width: 30%;
+  padding: 16px 32px;
+}
+
+.Winner h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.Winner p {
+  font-size: 14px;
+  margin: -5px 0px 0px 23px;
+}
+
+.fa-trophy {
+  margin: 0px 12px 0px 0px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 25px;
+}
+
+/* Reviews Section Styles */
+.Reviews {
+  margin-block: 30px;
+  /* display: flow-root; */
+}
+
+.Reviews .container {
+  width: 90%;
+  margin: auto;
+  position: relative;
+}
+
+.Reviews .container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.title p {
+  margin-top: -5px;
+  font-size: 22px;
+}
+
+.Reviews .title {
+  margin: 0px 0px 60px;
+}
+
+.rate {
+  width: 35%;
+  float: left;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  padding: 30px;
+  position: sticky;
+  top: 70px;
+}
+
+.title2 {
+  text-align: center;
+}
+
+.rate .title2 {
+  margin: -30px 0 30px;
+}
+
+.title2 h2 {
+  font-size: 60px;
+  margin: 20px 0 0;
+}
+
+.rate .title2 i {
+  margin: 0px 0px 15px;
+  color: gold;
+  font-size: 22px;
+}
+
+.rate1,
+.rate2,
+.rate3,
+.rate4 {
+  margin: 0px 0px 15px;
+}
+
+.one,
+.two {
+  display: inline-block;
+}
+
+.one {
+  width: 75%;
+  height: 12px;
+  border-radius: 15px;
+  margin: 0px 5px 0px 0px;
+  background-color: #ccc;
+  position: relative;
+  overflow: hidden;
+}
+
+.one .two {
+  background-color: goldenrod;
+  height: 100%;
+  position: absolute;
+}
+
+.rate1 .two {
+  width: 78%;
+  border-radius: 15px;
+}
+
+.rate2 .two {
+  width: 15%;
+  border-radius: 15px;
+}
+
+.rate3 .two {
+  width: 5%;
+  border-radius: 15px;
+}
+
+.rate4 .two {
+  width: 1.5%;
+}
+
+.rate5 .two {
+  width: 0.5%;
+}
+
+.rate5 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 30px;
+}
+
+.recommend,
+.Quality {
+  text-align: center;
+  margin-inline: 30px;
+}
+
+.all-rate h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.all-rate p {
+  font-size: 14px;
+}
+
+.people {
+  width: 60%;
+  float: right;
+}
+
+.person1,
+.person2,
+.person3,
+.person4 {
+  padding: 32px;
+  margin: 0px 0px 24px 0px;
+  position: relative;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+}
+
+.images {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.images img {
+  width: 10%;
+  height: 10%;
+  border-radius: 50%;
+  border: 2px solid blueviolet;
+}
+
+.name {
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  left: 130px;
+  top: 10px;
+}
+
+.name h3 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.name p {
+  font-size: 16px;
+  margin-top: -15px;
+}
+
+.name span {
+  font-size: 16px;
+  margin: 0px 5px;
+}
+
+.name span i {
+  margin: 0px 0px 5px 2px;
+  color: gold;
+}
+
+.Purchase {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+}
+
+.parh {
+  font-size: 18px;
+  margin: 25px 0px 15px;
+}
+
+.Purchase span {
+  font-size: 13px;
+  color: oklch(43.2% 0.232 292.759);
+  background-color: oklch(94.3% 0.029 294.588);
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.Purchase p {
+  font-size: 14px;
+  margin: 5px 0px 0px 45px;
+}
+
+.people button {
+  margin: 30px 0px 0px 300px;
+  text-align: center;
+  padding: 15px 32px;
+  background-color: oklch(60.6% 0.25 292.717);
+  color: white;
+  font-size: 16px;
+  border-radius: 25px;
+  border: 0px solid oklch(60.6% 0.25 292.717);
+}
+
+.people button:hover {
+  background-color: white;
+  color: blueviolet;
+  border: 2px solid oklch(60.6% 0.25 292.717);
+}
+
+/* Related-Products Secrion Styles */
+.Related-Products {
+  background-color: oklch(96.9% 0.016 293.756);
+  margin: 50px 0px 0px 0px;
+  padding-block: 30px;
+}
+
+.Related-Products .container {
+  width: 90%;
+  margin: auto;
+}
+
+.all-cards {
+  margin-right: auto;
+}
+
+.carde1,
+.carde2,
+.carde3,
+.carde4 {
+  background-color: white;
+  padding: 20px 20px 45px 20px;
+  width: 22%;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  /* display: flow-root; */
+  display: inline-block;
+  margin: 25px 15px;
+}
+
+.img {
+  position: relative;
+}
+
+.img img {
+  width: 220px;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1);
+}
+
+.img span {
+  padding: 4px 10px;
+  border-radius: 15px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-size: 14px;
+}
+
+.carde1 div span {
+  background-color: mediumseagreen;
+}
+
+.carde2 div span {
+  background-color: lime;
+}
+
+.carde3 div span {
+  background-color: cornflowerblue;
+}
+
+.carde4 div span {
+  background-color: orangered;
+}
+
+.all-cards h3 {
+  font-size: 20px;
+  margin: 10px 0px 8px;
+  font-weight: bold;
+}
+
+.all-cards p {
+  font-size: 18px;
+  margin: 0px 0px 10px;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0px 0px;
+}
+
+.Related-Products .button {
+  margin: 20px 500px 40px;
+  padding: 15px 32px;
+  text-align: center;
+  border: 2px solid oklch(60.6% 0.25 292.717);
+  border-radius: 25px;
+  color: oklch(60.6% 0.25 292.717);
+}
+
+.Related-Products .button:hover {
+  color: white;
+  background-color: oklch(60.6% 0.25 292.717);
+  border: 0px solid oklch(60.6% 0.25 292.717);
+}
+
+.all-cards button {
+  font-size: 16px;
+  background-color: oklch(60.6% 0.25 292.717);
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 0px solid oklch(60.6% 0.25 292.717);
+  color: white;
+  margin-left: 50px;
+}
+
+/* Footer Section Styles */
+.footer2 {
+  background-color: oklch(21% 0.034 264.665);
+}
+
+.all-footer {
+  padding-block: 40px;
+}
+
+.footer2 .container {
+  width: 90%;
+  margin: auto;
+}
+
+.footer-djl,
+.footer-product,
+.footer-support,
+.footer-company {
+  width: 23%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.all-footer li {
+  font-size: 16px;
+  margin: 0px 0px 8px;
+  color: gray;
+}
+
+.all-footer ul {
+  vertical-align: left;
+}
+
+.all-footer li:hover {
+  color: white;
+}
+
+.all-footer .footer-djl h2 {
+  font-size: 24px;
+}
+
+.all-footer h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.all-footer p {
+  font-size: 18px;
+  margin: 0px 0px 20px;
+  color: white;
+}
+
+.icons i {
+  color: white;
+  font-size: 20px;
+}
+
+.fa-facebook-f:hover {
+  color: blue;
+}
+
+.fa-twitter:hover {
+  color: cornflowerblue;
+}
+
+.fa-instagram:hover {
+  color: tomato;
+}
+
+.fa-youtube:hover {
+  color: red;
+}
+
+.last {
+  display: flow-root;
+  border-top: 1px solid gray;
+  padding-block: 30px;
+}
+
+.logo .master {
+  width: 50px;
+}
+
+.logo img {
+  width: 80px;
+  margin-inline: 10px;
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.last p {
+  float: left;
+  color: white;
+  font-size: 14px;
+}
+
+.logo img {
+  float: right;
+}
